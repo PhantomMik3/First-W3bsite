@@ -1,0 +1,342 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Montserrat';
+}
+
+.container{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.title{
+    color: rgb(26, 26, 196);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 600px;
+    background: hsla(222, 43%, 51%, 0); 
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(222, 43%, 51%, 0.622), hsla(220, 51%, 19%, 0.607))linear-gradient(to right, hsla(222, 44%, 51%, 0.61), hsla(220, 51%, 19%, 0.614)), url(../ProjectsH/img/portada.png);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(222, 44%, 51%, 0.616), hsla(220, 51%, 19%, 0.601)), url(../ProjectsH/img/portada.png);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.textos-header h1{
+    font-size: 50px;
+    color: white;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About Mys3lf */
+
+.container-About-Mys3lf{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.image-about-M3{
+    width: 48%;
+    
+}
+.About-Myself .content-texts{
+    width: 48%;
+    
+}
+
+.content-texts h3{
+    margin-bottom: 15px;
+}
+
+.content-texts h3 span{
+    background: rgb(68, 15, 202);
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.content-texts p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+/* Gallery */
+
+.Mission{
+    background: #f2f2f2;
+}
+.gallery-miss{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.image-miss{
+    width: -15px;
+    margin-bottom: 10px;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.image-miss > img{
+    width: 50;
+    height: 50;
+    object-fit: cover;
+    display: block;
+
+}
+
+.hover-gallery{
+    position: absolute;
+    width: 50;
+    height: 50;
+    top: 0;
+    transform: scale(0); 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform .5s;
+    display: flex;
+    background: hsla(263, 64%, 46%, 0.448)
+    
+}
+
+.hover-gallery img{
+    width: 300px;
+}
+
+.hover-gallery p{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+
+}
+
+.image-miss:hover .hover-gallery{
+    transform: scale(1);
+}
+
+/*  Goals */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.cards .card{
+        background: rgb(23, 8, 228);
+        display: flex;
+        width: 300px;
+        height: 250px;
+        align-items: center;
+        justify-content:space-evenly;
+        border-radius: 5px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+        margin-right: 25px;
+        margin-left: 25px;
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+
+}
+
+.cards .card > .contenido-text-card{
+    width: 300px;
+    color: #fff;
+
+}
+
+.cards .card > .contenido-text-card p{
+    font-weight: 600;
+    padding-top: 5px;
+    padding-left: 5px;
+    align-items: center;
+}
+
+
+
+/* Our Services */
+
+.Meet-Mik3{
+    background: #fff;
+    padding-bottom: 30px;
+}
+.Me3t-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items:center 
+}
+
+.Mik3-ind{
+    width: 28%;
+    text-align: center;
+
+}
+.Mik3-ind img{
+    width: 90%;
+    
+}
+
+.Mik3-ind h3{
+    margin: 10px 0;
+}
+
+.Mik3-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+
+footer{
+    background: hsla(222, 43%, 51%, 0); 
+    /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, hsla(222, 43%, 51%, 0.622), hsla(220, 51%, 19%, 0.607))linear-gradient(to right, hsla(222, 44%, 51%, 0.61), hsla(220, 51%, 19%, 0.614)), url(../ProjectsH/img/portada.png);
+    /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, hsla(222, 44%, 51%, 0.616), hsla(220, 51%, 19%, 0.601)), url(../ProjectsH/img/portada.png);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding: 60px 0 30px 0;;
+margin: auto;
+overflow: hidden;
+}
+
+.container-foot{
+    display: flex;
+    width: 90%;
+    justify-content:space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foot{
+    text-align: center;
+
+}
+
+.content-foot h4{
+    color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foot1{
+    
+ font-size:24px;
+width:40px;
+        height:40px;
+        line-height:40px;
+        display:inline-block;
+        text-align:center;
+        border-radius:50%;
+        border:1px solid #fff;
+        margin:0 8px;
+        color:inherit;
+        opacity: 100%;
+      
+}
+
+.content-foot2{
+    font-size:24px;
+width:40px;
+        height:40px;
+        line-height:40px;
+        display:inline-block;
+        text-align:center;
+        border-radius:50%;
+        border:1px solid #fff;
+        margin:0 8px;
+        color:inherit;
+        opacity: 100%;
+}
+
+.content-foot3{
+    font-size:24px;
+width:40px;
+        height:40px;
+        line-height:40px;
+        display:inline-block;
+        text-align:center;
+        border-radius:50%;
+        border:1px solid #fff;
+        margin:0 8px;
+        color:inherit;
+        opacity: 100%;
+}
+
+        .content-foot1:hover{
+    opacity:1;
+}
+
